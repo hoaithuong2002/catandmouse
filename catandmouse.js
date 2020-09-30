@@ -3,13 +3,14 @@ function catNmouse() {
         this.name = name;
         this.weight = weight;
         this.speed = speed;
+        this.status = status
 
         this.sound = function () {
-            alert(this.name +" meowwww!");
+            alert(this.name +" meo!");
         }
 
         this.catch = function (mouse) {
-            if (this.speed > mouse.speed){
+            if (this.speed > mouse.speed ){
                 alert(this.name + " bắt " + mouse.name);
                 mouse.status = false;
             }
@@ -27,13 +28,13 @@ function catNmouse() {
         this.weight = weight;
         this.speed = speed;
         this.sound = function () {
-            alert(this.name+ " chittttt!");
+            alert(this.name+ " chit!");
         }
     }
     let nameMouse = this.name ;
     function eatMouse() {
         this.weight += mouse.weight;
-        alert( nameCat + " ăn chuột "+ nameMouse+" roiiiii!");
+        alert( nameCat + " ăn chuột "+ nameMouse+" roi!");
     }
     let  cat = new Cat("Mimi", 2, 100);
     cat.sound();
