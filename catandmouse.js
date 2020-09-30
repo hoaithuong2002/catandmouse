@@ -6,7 +6,7 @@ function catNmouse() {
         this.status = status
 
         this.sound = function () {
-            alert(this.name +" meo!");
+            alert(this.name +" meo meo");
         }
 
         this.catch = function (mouse) {
